@@ -4,7 +4,7 @@ from database.core import db_dependency
 from database.models import DBMovie
 from fastapi import HTTPException, Path
 from schemas.movies import MovieRequest
-from routers.auth import user_dependency
+from controllers.auth import user_dependency
 
 router = APIRouter(
     prefix="/movies",

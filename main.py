@@ -5,7 +5,6 @@ from starlette import status
 from routers import auth
 from routers import movies
 
-
 app = FastAPI(
     title="Movie API",
     version="1.0.0",
@@ -17,6 +16,6 @@ app.include_router(movies.router)
 Base.metadata.create_all(bind=engine)
 
 
-@app.get("/", status_code=status.HTTP_200_OK)
+@app.get("/", status_code=status.HTTP_200_OK, tags=["root"])
 def root():
     return {"message": "server is running"}
