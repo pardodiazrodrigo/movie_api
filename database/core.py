@@ -3,8 +3,9 @@ from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.ext.declarative import declarative_base
 from typing import Annotated
 from fastapi import Depends
+from decouple import config
 
-SQLALCHEMY_DATABASE_URL = "sqlite:///./movies-db.db"
+SQLALCHEMY_DATABASE_URL = config("DATABASE_URL")
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
