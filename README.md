@@ -2,12 +2,12 @@
 
 Welcome to Movie API! This API allows you to manage movie information, including details such as title, director, release year, and genre.
 
-##Requirements
+## Requirements
 
 - Python 3.7 or higher
 - Pip (Python package manager)
 
-##Installation
+## Installation
 
 1. Clone this repository to your local machine:
    git clone https://github.com/your-username/movie-api.git
@@ -17,7 +17,7 @@ Welcome to Movie API! This API allows you to manage movie information, including
    pip install -r requirements.txt
 
 
-##Configuration
+## Configuration
 
 Create a .env file in the project root directory and define the following environment variables:
 TEST_DATABASE_URL=postgresql
@@ -25,7 +25,7 @@ DATABASE_URL=postgresql
 SECRET_KEY={secret_key}
 ALGORITHM=HS256
 
-##Usage
+## Usage
 
 1. Start the development server:
    uvicorn main:app --reload
@@ -34,23 +34,23 @@ ALGORITHM=HS256
 
 Here you'll find an interactive interface where you can test all available API routes along with their parameters and response examples.
 
-##Available Routes
-###GET /movies
+## Available Routes
+### GET /movies
 Retrieve a list of all movies in the database.
-###GET /movies/{movie_id}
+### GET /movies/{movie_id}
 Retrieve details of a specific movie based on its ID.
-###POST /movies
+### POST /movies
 Create a new movie in the database.
-###Request Parameters:
+### Request Parameters:
 - title (string): The title of the movie.
 - director (string): The director of the movie.
 - release_year (integer): The release year of the movie.
 - genre (string): The genre of the movie..
-###PUT /movies/{movie_id}
+### PUT /movies/{movie_id}
 Update details of an existing movie based on its ID.
-###DELETE /movies/{movie_id}
+### DELETE /movies/{movie_id}
 Delete a specific movie based on its ID.
 
-###Contribution
+### Contribution
 Contributions are welcome! If you find any bugs or have any improvements, please open an issue or send a pull request.
 
