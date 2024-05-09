@@ -1,5 +1,5 @@
 from .core import Base
-from sqlalchemy import Column, Integer, String, ARRAY, Boolean
+from sqlalchemy import Column, Integer, String, Boolean
 
 
 class DBMovie(Base):

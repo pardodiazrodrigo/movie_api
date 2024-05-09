@@ -1,8 +1,6 @@
 from fastapi import HTTPException
-from starlette import status
 from database.models import DBMovie
 from schemas.movies import MovieRequest
-from controllers.auth import user_dependency
 
 
 async def user_permissions(user):
@@ -54,6 +52,7 @@ async def update_movie(user, db, movie_request: MovieRequest, movie_id: int):
     movie_model.genre = movie_request.genre
     db.add(movie_model)
     db.commit()
+
 
 async def delete_movie(user, db, movie_id: int):
     await admin_permissions(user)
