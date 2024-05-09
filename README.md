@@ -10,7 +10,7 @@ Welcome to Movie API! This API allows you to manage movie information, including
 ## Installation
 
 1. Clone this repository to your local machine:
-   git clone https://github.com/your-username/movie-api.git
+   git clone [https://github.com/your-username/movie-api.git](https://github.com/pardodiazrodrigo/movie_api)
 2. Navigate to the project directory:
    cd movie-api
 3. Install project dependencies using pip:
