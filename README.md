@@ -16,7 +16,6 @@ Welcome to Movie API! This API allows you to manage movie information, including
 3. Install project dependencies using pip:
    pip install -r requirements.txt
 
-
 ## Configuration
 
 Create a .env file in the project root directory and define the following environment variables:
@@ -33,6 +32,10 @@ ALGORITHM=HS256
    http://localhost:8000/docs
 
 Here you'll find an interactive interface where you can test all available API routes along with their parameters and response examples.
+
+## Authentication
+
+To access certain endpoints that involve creating, updating, or deleting a movie, your role must be admin. To view all movies or details of a specific movie, your role must be user.
 
 ## Available Routes
 ### GET /movies
